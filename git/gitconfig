@@ -1,16 +1,17 @@
 [user]
-	name = Julien Cigar
-	email = julien.cigar@gmail.com
+    name = Julien Cigar
+    email = julien.cigar@gmail.com
 
 [color]
-	ui = auto
+    ui = auto
 
 [merge]
-	tool = vimdiff
-	stat = true
+    tool = vimdiff
+    stat = true
 
 [core]
-	editor = vim
+    editor = vim
+    excludesfile = ~/.gitignore
 
 [rebase]
-	stat = true
+    stat = true
