@@ -1,0 +1,3 @@
+[submodule "vim/vendors/vim-lucius"]
+	path = vim/vendors/vim-lucius
+	url = https://github.com/jonathanfilip/vim-lucius.git
