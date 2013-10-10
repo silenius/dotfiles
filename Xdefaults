@@ -6,7 +6,7 @@ urxvt*scrollBar_right: True
 urxvt*thickness: 5
 urxvt*fading: 50
 urxvt*font: -xos4-terminus-medium-r-normal--0-0-72-72-c-0-iso10646-1
-urxvt*termName:screen-256color
+urxvt*termName: rxvt-unicode-256color
 !urxvt*background: #333333
 urxvt*foreground: #efefcf
 urxvt*color0: #5a5a5a
