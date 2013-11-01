@@ -15,3 +15,6 @@
 
 [rebase]
     stat = true
+
+[push]
+    default = simple
