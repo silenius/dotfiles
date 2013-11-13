@@ -17,6 +17,8 @@ set ssl_force_tls
 unset ssl_use_sslv3 # only use TLS
 #set ssl_ca_certificates_file="/usr/local/share/certs/ca-root-nss.crt"
 alternates "julien.cigar@gmail.com|mage@slug.uni.cx"
+unset beep
+unset beep_new
 
 # Directories
 
