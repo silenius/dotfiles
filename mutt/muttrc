@@ -54,7 +54,7 @@ set pager_index_lines=10 # number of index lines to show
 set pager_context=2 # number of context lines to show (for next/prev page)
 set smart_wrap # long lines are wrapped at a word boundary
 set tilde # pad blank lines to the bottom of the screen with a tilde
-#set menu_scroll # scroll line by line in index mode
+set menu_scroll # scroll line by line in index mode
 unset markers # no useless "+" signs ..
 auto_view text/html application/pdf # which MIME types to auto-view
 alternative_order text/plain text/enriched text/html
