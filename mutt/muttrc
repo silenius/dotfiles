@@ -19,6 +19,8 @@ unset ssl_use_sslv3 # only use TLS
 alternates "julien.cigar@gmail.com|mage@slug.uni.cx"
 unset beep
 unset beep_new
+set mime_forward
+set mime_forward_rest
 
 # Directories
 
@@ -50,7 +52,7 @@ unset mark_old # don't mark new unread messages as old if you exit a mailbox
 # Pager options
 
 set pager_stop # don't go to next message automatically
-set pager_index_lines=10 # number of index lines to show
+set pager_index_lines=0 # number of index lines to show
 set pager_context=2 # number of context lines to show (for next/prev page)
 set smart_wrap # long lines are wrapped at a word boundary
 set tilde # pad blank lines to the bottom of the screen with a tilde
