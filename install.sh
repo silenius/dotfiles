@@ -40,4 +40,4 @@ install_files() {
 root="$(pwd)";
 
 echo "===>>> Installing dotfiles ..."
-install_files "$root" "$HOME";
+install_files "$root/conf" "$HOME";
