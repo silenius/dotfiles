@@ -1,0 +1,28 @@
+color normal color15 default
+color error brightcolor15 color196
+color indicator color235 color15
+color status brightcolor39 default
+
+color hdrdefault color245 default
+color header brightcolor214 default "^(Subject): "
+color signature color243 default
+
+color body color137 default [\-\.+_a-zA-Z0-9]+@[\-\.a-zA-Z0-9]+ # mails
+color body color137 default ((https?|ftp)://|www)+[\-\.\;@,/%~_:?&=\#a-zA-Z0-9+]+
+
+color quoted color243 default
+color quoted1 color211 default
+color quoted2 color222 default
+color quoted3 color214 default
+color quoted4 color154 default
+
+color tilde color39 default
+color tree color211 default
+color attachment brightcolor211 default
+
+color index color114 default ~N # message is new
+color index color79 default ~O # message is old
+color index color243 default ~P # message is PGP encrypted
+color index brightcolor221 default ~F # message is from me
+color index brightcolor39 default ~T # message is to me, but also to/cc others
+color index color88 default ~D # message is deleted
