@@ -67,14 +67,19 @@ set sort_alias="alias"
 set reverse_alias
 source $alias_file
 
-# PGP
-
-source ~/.mutt/gpg.rc
+# Encryption options
 
 set crypt_autosign
+set crypt_replysign
 set crypt_replyencrypt
+set crypt_replysignencrypted
 set crypt_verify_sig
+set crypt_use_gpgme
+
+# PGP options
+
 set pgp_use_gpg_agent
+set pgp_auto_decode
 set pgp_timeout=600
 set pgp_sign_as=0xB2BB3710A20423C0
 
