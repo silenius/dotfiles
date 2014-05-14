@@ -61,6 +61,10 @@ unset markers # no useless "+" signs ..
 auto_view text/html application/pdf # which MIME types to auto-view
 alternative_order text/plain text/enriched text/html
 
+# Display options
+
+unignore reply-to
+
 # Aliases options
 
 set sort_alias="alias"
