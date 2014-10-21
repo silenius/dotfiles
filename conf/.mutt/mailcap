@@ -1,3 +1,4 @@
 text/html; w3m -I %{charset} -cols 70 -T text/html -dump %s; nametemplate=%s.html; copiousoutput
 application/pdf; zathura %s
 image/*; geeqie %s
+application/vnd.openxmlformats-officedocument.wordprocessingml.document; libreoffice %s
