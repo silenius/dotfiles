@@ -87,6 +87,10 @@ set pgp_auto_decode
 set pgp_timeout=600
 set pgp_sign_as=0xB2BB3710A20423C0
 
+# Macros
+
+macro index,pager d "<save-message>=Trash<enter><enter><refresh>" "Trash"
+
 # Colors
 
 source ~/.mutt/colors
