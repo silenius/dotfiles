@@ -93,4 +93,4 @@ macro index,pager d "<save-message>=Trash<enter><enter><refresh>" "Trash"
 
 # Colors
 
-source ~/.mutt/colorschemes/solarized-dark-256colors
+source ~/.mutt/colorschemes/solarized-dark-256
