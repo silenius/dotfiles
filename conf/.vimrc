@@ -21,6 +21,8 @@ set report=0
 set autoindent
 set modeline
 set t_Co=256
+set backupdir=~/.vim/tmp,.
+set directory=~/.vim/tmp,.
 
 " TAB SETTINGS
 set expandtab
