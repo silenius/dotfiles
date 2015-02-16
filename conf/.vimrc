@@ -1,7 +1,16 @@
+set nocompatible
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'gmarik/Vundle.vim'
+Plugin 'kien/ctrlp.vim'
+Plugin 'bling/vim-airline'
+Plugin 'scrooloose/syntastic'
+Plugin 'jonathanfilip/vim-lucius'
+Plugin 'altercation/vim-colors-solarized'
+call vundle#end()
 syntax on
 filetype plugin indent on
-
-set nocompatible
 set hlsearch
 set showmatch
 set showmode
