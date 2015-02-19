@@ -24,7 +24,6 @@ set ruler
 set wrap
 set number
 set numberwidth=4
-set background=dark
 set history=50
 set undolevels=50
 set textwidth=79
@@ -52,14 +51,16 @@ if has("gui_running")
     set list
     set listchars=eol:$,tab:>~
     set browsedir=buffer
-    set guifont=Tixus
+    set guifont=Tixus\ 6
     set guioptions=aegimt
 
-    colorscheme lucius
+    colorscheme hybrid
 
-    highlight CursorLine guibg=Grey20 term=NONE cterm=NONE gui=NONE
-    highlight CursorColumn guibg=Grey20 term=NONE cterm=NONE gui=NONE
+    "highlight CursorLine guibg=NONE term=NONE cterm=NONE gui=NONE
+    "highlight CursorColumn guibg=NONE term=NONE cterm=NONE gui=NONE
 endif
+
+set background=dark
 
 augroup apache
     autocmd!
@@ -83,3 +84,6 @@ augroup filetype_html_xml
 augroup END
 
 imap <c-d> <esc>ddi
+
+let g:indent_guides_color_change_percent = 5
+let g:indent_guides_enable_on_vim_startup=1
