@@ -54,12 +54,11 @@ if has("gui_running")
     set guifont=Tixus\ 6
     set guioptions=aegimt
 
-    colorscheme hybrid
-
     "highlight CursorLine guibg=NONE term=NONE cterm=NONE gui=NONE
     "highlight CursorColumn guibg=NONE term=NONE cterm=NONE gui=NONE
 endif
 
+colorscheme hybrid
 set background=dark
 
 augroup apache
