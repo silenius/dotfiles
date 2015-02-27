@@ -12,6 +12,7 @@ Plugin 'jonathanfilip/vim-lucius'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'w0ng/vim-hybrid'
 Plugin 'tomasr/molokai'
+Plugin 'pangloss/vim-javascript'
 call vundle#end()
 syntax on
 filetype plugin indent on
