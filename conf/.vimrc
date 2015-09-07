@@ -5,16 +5,12 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'bling/vim-airline'
-Plugin 'scrooloose/syntastic'
 Plugin 'majutsushi/tagbar'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'w0ng/vim-hybrid'
-Plugin 'tomasr/molokai'
 Plugin 'pangloss/vim-javascript'
 Plugin 'tpope/vim-fugitive'
-Plugin 'terryma/vim-multiple-cursors'
 Plugin 'hynek/vim-python-pep8-indent'
-Plugin 'rust-lang/rust.vim'
 call vundle#end()
 syntax on
 filetype plugin indent on
