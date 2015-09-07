@@ -3,7 +3,7 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
-Plugin 'kien/ctrlp.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'bling/vim-airline'
 Plugin 'scrooloose/syntastic'
 Plugin 'majutsushi/tagbar'
