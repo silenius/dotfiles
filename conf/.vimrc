@@ -8,11 +8,13 @@ Plugin 'bling/vim-airline'
 Plugin 'scrooloose/syntastic'
 Plugin 'majutsushi/tagbar'
 Plugin 'nathanaelkane/vim-indent-guides'
-Plugin 'jonathanfilip/vim-lucius'
-Plugin 'altercation/vim-colors-solarized'
 Plugin 'w0ng/vim-hybrid'
 Plugin 'tomasr/molokai'
 Plugin 'pangloss/vim-javascript'
+Plugin 'tpope/vim-fugitive'
+Plugin 'terryma/vim-multiple-cursors'
+Plugin 'hynek/vim-python-pep8-indent'
+Plugin 'rust-lang/rust.vim'
 call vundle#end()
 syntax on
 filetype plugin indent on
@@ -54,9 +56,6 @@ if has("gui_running")
     set browsedir=buffer
     set guifont=Tixus\ 6
     set guioptions=aegimt
-
-    "highlight CursorLine guibg=NONE term=NONE cterm=NONE gui=NONE
-    "highlight CursorColumn guibg=NONE term=NONE cterm=NONE gui=NONE
 endif
 
 colorscheme hybrid
