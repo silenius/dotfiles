@@ -5,16 +5,14 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'bling/vim-airline'
-Plugin 'scrooloose/syntastic'
 Plugin 'majutsushi/tagbar'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'w0ng/vim-hybrid'
-Plugin 'tomasr/molokai'
 Plugin 'pangloss/vim-javascript'
 Plugin 'tpope/vim-fugitive'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'hynek/vim-python-pep8-indent'
-Plugin 'rust-lang/rust.vim'
+Plugin 'mitsuhiko/vim-jinja'
 call vundle#end()
 syntax on
 filetype plugin indent on
@@ -86,3 +84,5 @@ imap <c-d> <esc>ddi
 
 let g:indent_guides_color_change_percent = 5
 let g:indent_guides_enable_on_vim_startup=1
+
+let g:ctrlp_user_command = 'find %s -not -path "*/\.*" -type f -exec grep -Iq . {} \; -and -print'
