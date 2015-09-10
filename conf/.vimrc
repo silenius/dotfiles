@@ -52,6 +52,7 @@ if has("gui_running")
     set browsedir=buffer
     set guifont=Tixus\ 6
     set guioptions=aegimt
+    set vb t_vb=
 endif
 
 colorscheme hybrid
