@@ -34,6 +34,11 @@ set modeline
 set t_Co=256
 set backupdir=~/.vim/tmp,.
 set directory=~/.vim/tmp,.
+set wildmenu
+set wildmode=full
+set wildignore+=*.pyc,*.pyo,*.egg,*.egg-info
+set wildignore+=*.swp
+set wildignore+=*.so
 
 " TAB SETTINGS
 set expandtab
@@ -44,6 +49,7 @@ set shiftwidth=4
 " ENCODING
 set encoding=utf-8
 set termencoding=utf-8
+
 
 " GUI
 if has("gui_running")
