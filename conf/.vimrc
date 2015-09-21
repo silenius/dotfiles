@@ -58,6 +58,7 @@ if has("gui_running")
     set browsedir=buffer
     set guifont=Tixus\ 6
     set guioptions=aegimt
+    set vb t_vb=
 endif
 
 colorscheme hybrid
@@ -88,3 +89,5 @@ imap <c-d> <esc>ddi
 
 let g:indent_guides_color_change_percent = 5
 let g:indent_guides_enable_on_vim_startup=1
+
+let g:ctrlp_user_command = 'find %s -not -path "*/\.*" -type f -exec grep -Iq . {} \; -and -print'
