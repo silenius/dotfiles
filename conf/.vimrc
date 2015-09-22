@@ -17,8 +17,8 @@ filetype plugin indent on
 set hlsearch
 set showmatch
 set showmode
-set cursorline
-set cursorcolumn
+set nocursorline
+set nocursorcolumn
 set ruler
 set wrap
 set number
