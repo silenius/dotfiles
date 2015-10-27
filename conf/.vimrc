@@ -86,6 +86,7 @@ augroup filetype_html_xml
 augroup END
 
 imap <c-d> <esc>ddi
+cmap w!! w !sudo tee > /dev/null %
 
 let g:indent_guides_color_change_percent = 5
 let g:indent_guides_enable_on_vim_startup=1
