@@ -11,6 +11,7 @@ Plugin 'w0ng/vim-hybrid'
 Plugin 'pangloss/vim-javascript'
 Plugin 'tpope/vim-fugitive'
 Plugin 'hynek/vim-python-pep8-indent'
+Plugin 'saltstack/salt-vim'
 call vundle#end()
 syntax on
 filetype plugin indent on
