@@ -33,8 +33,8 @@ set report=0
 set autoindent
 set modeline
 set t_Co=256
-set backupdir=~/.vim/tmp,.
-set directory=~/.vim/tmp,.
+set backupdir=~/.vim/tmp
+set directory=~/.vim/tmp
 set wildmenu
 set wildmode=full
 set wildignore+=*.pyc,*.pyo,*.egg,*.egg-info
@@ -50,7 +50,6 @@ set shiftwidth=4
 " ENCODING
 set encoding=utf-8
 set termencoding=utf-8
-
 
 " GUI
 if has("gui_running")
@@ -87,6 +86,10 @@ augroup filetype_html_xml
 augroup END
 
 imap <c-d> <esc>ddi
+map! <esc>[7~ <Home>
+map! <esc>[8~ <End>
+map <esc>[7~ <Home>
+map <esc>[8~ <End>
 command W :execute ':silent w !sudo tee % > /dev/null' | :edit!
 
 let g:indent_guides_color_change_percent = 5
