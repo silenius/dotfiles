@@ -1,3 +1,0 @@
-[submodule "conf/.vim/vendors/vim-lucius"]
-	path = conf/.vim/vendors/vim-lucius
-	url = https://github.com/jonathanfilip/vim-lucius.git
