@@ -12,6 +12,7 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'tpope/vim-fugitive'
 Plugin 'hynek/vim-python-pep8-indent'
 Plugin 'saltstack/salt-vim'
+Plugin 'rking/ag.vim'
 call vundle#end()
 syntax on
 filetype plugin indent on
@@ -23,6 +24,7 @@ set nocursorcolumn
 set ruler
 set wrap
 set number
+set relativenumber
 set numberwidth=4
 set history=50
 set undolevels=50
