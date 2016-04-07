@@ -97,4 +97,9 @@ command W :execute ':silent w !sudo tee % > /dev/null' | :edit!
 let g:indent_guides_color_change_percent = 5
 let g:indent_guides_enable_on_vim_startup=1
 
-let g:ctrlp_user_command = 'find %s -not -path "*/\.*" -type f -exec grep -Iq . {} \; -and -print'
+if executable('ag')
+    let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+    let g:ctrlp_use_caching = 0
+else
+    let g:ctrlp_user_command = 'find %s -not -path "*/\.*" -type f -exec grep -Iq . {} \; -and -print'
+endif
