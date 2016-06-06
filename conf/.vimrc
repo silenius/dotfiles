@@ -13,6 +13,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'hynek/vim-python-pep8-indent'
 Plugin 'saltstack/salt-vim'
 Plugin 'rking/ag.vim'
+Plugin 'scrooloose/syntastic'
 call vundle#end()
 syntax on
 filetype plugin indent on
@@ -103,3 +104,12 @@ if executable('ag')
 else
     let g:ctrlp_user_command = 'find %s -not -path "*/\.*" -type f -exec grep -Iq . {} \; -and -print'
 endif
+
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+" let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
