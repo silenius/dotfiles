@@ -33,7 +33,7 @@ set tmpdir="~/.mutt/temp" # where to keep temp files
 
 # Compose message
 
-set from="jcigar@ulb.ac.be"
+set from="julien@perdition.city"
 set use_from # generate the "From:" header field when sending messages
 set realname="Julien Cigar"
 set include # include message in replies
@@ -87,9 +87,24 @@ set pgp_auto_decode
 set pgp_timeout=600
 set pgp_sign_as=0xB2BB3710A20423C0
 
-# Macros
+# Sidebar
 
-macro index,pager d "<save-message>=Trash<enter><enter><refresh>" "Trash"
+set sidebar_width=32
+set sidebar_visible=no
+set sidebar_delim='|'
+set sidebar_sort=yes
+set sidebar_shortpath=yes
+
+# Macros
+#
+macro index b '<enter-command>toggle sidebar_visible<enter><refresh>'
+macro pager b '<enter-command>toggle sidebar_visible<enter><redraw-screen>'
+bind index B bounce-message
+
+bind index,pager \CP sidebar-prev
+bind index,pager \CN sidebar-next
+bind index,pager \CO sidebar-open
+
 
 # Colors
 
