@@ -1,6 +1,7 @@
 HISTFILE=~/.histfile
 HISTSIZE=1000
 SAVEHIST=1000
+GPG_TTY=$(tty)
 bindkey -e
 zstyle :compinstall filename $HOME'/.zshrc'
 
