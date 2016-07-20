@@ -7,8 +7,14 @@ zstyle :compinstall filename $HOME'/.zshrc'
 
 autoload -Uz compinit
 compinit
+
 autoload -U colors
 colors
+
+autoload -Uz promptinit
+promptinit
+prompt fade red
+
 bindkey "^[[7~" beginning-of-line
 bindkey "^[[8~" end-of-line
 bindkey "^[[1~" beginning-of-line
