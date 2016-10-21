@@ -5,7 +5,7 @@
 # Lines starting with a '#' are ignored.
 
 setxkbmap be
-xmodmap "$HOMEr/.Xmodmap"
+xmodmap "$HOME/.Xmodmap"
 xrdb "$HOME/.Xresources"
 xset -b
 compton -c -b
