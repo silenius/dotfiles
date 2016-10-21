@@ -1,0 +1,13 @@
+#!/bin/sh
+#
+# fluxbox startup-script:
+#
+# Lines starting with a '#' are ignored.
+
+setxkbmap be
+xmodmap "$HOMEr/.Xmodmap"
+xrdb "$HOME/.Xresources"
+xset -b
+compton -c -b
+
+exec fluxbox
