@@ -1,32 +1,59 @@
-urxvt*saveLines:  0
-urxvt*loginShell: true
 urxvt*depth: 32
-urxvt*background: [90]#000000
-urxvt*scrollWithBuffer: false
-urxvt*scrollTtyOutput: false
-urxvt*scrollBar: false
-urxvt*scrollBar_right: false
-urxvt*scrollBar_floating: false
+!urxvt*background: [90]#000000
+urxvt*background: [90]#002b36
+! urxvt*transparent: true
+! urxvt*shading: 10
+urxvt*scrollBar: False
+urxvt*scrollstyle: plain
+urxvt*scrollBar_right: True
 urxvt*thickness: 5
-urxvt*fading: 50
+!urxvt*fading: 50
 urxvt*font: -xos4-terminus-medium-r-normal--0-0-72-72-c-0-iso10646-1
-urxvt*termName: screen-256color
-!urxvt*background: #333333
-urxvt*foreground: #efefcf
-urxvt*color0: #5a5a5a
-urxvt*color1: #ff4747
-urxvt*color2: #afc81c
-urxvt*color3: #fdd338
-urxvt*color4: #619af4
-urxvt*color5: #5f5a90
-urxvt*color6: #47e0ff
-urxvt*color7: #ffffff
-urxvt*color8: #3e3e3e
-urxvt*color9: #ff6767
-urxvt*color10: #bfc81c
-urxvt*color11: #f4d461
-urxvt*color12: #5496ff
-urxvt*color13: #826ab1
-urxvt*color14: #2ed9fb
-urxvt*color15: #dedede
-urxvt*color16: #ffb000
+*termName: screen-256color
+! urxvt*termName:screen-256color
+urxvt*saveLines: 10000
+
+#define S_yellow        #b58900
+#define S_orange        #cb4b16
+#define S_red           #dc322f
+#define S_magenta       #d33682
+#define S_violet        #6c71c4
+#define S_blue          #268bd2
+#define S_cyan          #2aa198
+#define S_green         #859900
+
+#define S_base03        #002b36
+#define S_base02        #073642
+#define S_base01        #586e75
+#define S_base00        #657b83
+#define S_base0         #839496
+#define S_base1         #93a1a1
+#define S_base2         #eee8d5
+#define S_base3         #fdf6e3
+
+! URxvt*background:            S_base03
+
+*background:              S_base03
+*foreground:              S_base0
+!*fading:                  10
+*fadeColor:               S_base03
+*cursorColor:             S_base1
+*pointerColorBackground:  S_base01
+*pointerColorForeground:  S_base1
+
+*color0:                  S_base02
+*color1:                  S_red
+*color2:                  S_green
+*color3:                  S_yellow
+*color4:                  S_blue
+*color5:                  S_magenta
+*color6:                  S_cyan
+*color7:                  S_base2
+*color8:                  S_base03
+*color9:                  S_orange
+*color10:                 S_base01
+*color11:                 S_base00
+*color12:                 S_base0
+*color13:                 S_violet
+*color14:                 S_base1
+*color15:                 S_base3

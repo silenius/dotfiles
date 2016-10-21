@@ -1,7 +1,7 @@
 [user]
     name = Julien Cigar
     email = julien@perdition.city
-    signingkey = B2BB3710A20423C0
+#    signingkey = B2BB3710A20423C0
 
 [color]
     ui = auto
@@ -20,6 +20,6 @@
 [push]
     default = simple
 
-[commit]
-    gpgsign = true
+#[commit]
+#    gpgsign = true
 
