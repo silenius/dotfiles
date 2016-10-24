@@ -1,0 +1,5 @@
+background: none
+window.borderWidth: 0
+window.handleWidth: 1
+window.title.height: 12
+toolbar.borderWidth: 0

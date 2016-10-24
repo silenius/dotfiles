@@ -16,6 +16,7 @@ Plugin 'rking/ag.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'rust-lang/rust.vim'
 Plugin 'haproxy'
+Plugin 'airblade/vim-gitgutter'
 call vundle#end()
 syntax on
 filetype plugin indent on
