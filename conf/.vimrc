@@ -28,7 +28,6 @@ set nocursorcolumn
 set ruler
 set wrap
 set number
-set relativenumber
 set numberwidth=4
 set history=50
 set undolevels=50
