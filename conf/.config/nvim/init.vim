@@ -6,17 +6,24 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'bling/vim-airline'
 Plug 'majutsushi/tagbar'
 Plug 'nathanaelkane/vim-indent-guides'
-Plug 'w0ng/vim-hybrid'
 Plug 'pangloss/vim-javascript'
 Plug 'tpope/vim-fugitive'
 Plug 'hynek/vim-python-pep8-indent'
 Plug 'saltstack/salt-vim'
 Plug 'rking/ag.vim'
-Plug 'scrooloose/syntastic'
 Plug 'rust-lang/rust.vim'
 Plug 'haproxy'
 Plug 'airblade/vim-gitgutter'
 Plug 'icinga/icinga2'
+Plug 'neomake/neomake'
+
+" Colorschemes
+Plug 'w0ng/vim-hybrid'
+Plug 'joshdick/onedark.vim'
+Plug 'morhetz/gruvbox'
+Plug 'mhartington/oceanic-next'
+Plug 'MaxSt/FlatColor'
+Plug 'iCyMind/NeoSolarized'
 call plug#end()
 syntax on
 filetype plugin indent on
