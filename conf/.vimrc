@@ -17,7 +17,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'rust-lang/rust.vim'
 Plugin 'haproxy'
 Plugin 'airblade/vim-gitgutter'
-Plugin 'icinga/icinga2'
+Plugin 'Icinga/icinga2', {'rtp': 'tools/syntax/vim'}
 call vundle#end()
 syntax on
 filetype plugin indent on
