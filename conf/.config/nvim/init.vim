@@ -15,7 +15,8 @@ Plug 'rust-lang/rust.vim'
 Plug 'haproxy'
 Plug 'airblade/vim-gitgutter'
 Plug 'icinga/icinga2'
-Plug 'neomake/neomake'
+"Plug 'neomake/neomake'
+Plug 'w0rp/ale'
 Plug 'mattn/emmet-vim'
 
 " Colorschemes
@@ -105,8 +106,15 @@ else
     let g:ctrlp_user_command = 'find %s -not -path "*/\.*" -type f -exec grep -Iq . {} \; -and -print'
 endif
 
-:highlight NeomakeWarningMsg ctermfg=227 ctermbg=16
-:highlight NeomakeErrorMsg ctermfg=1 ctermbg=16
-let g:neomake_warning_sign={'text': '!W', 'texthl': 'NeomakeWarningMsg'}
-let g:neomake_error_sign={'text': '!E', 'texthl': 'NeomakeErrorMsg'}
-autocmd! BufWritePost * Neomake
+let g:airline#extensions#ale#enabled = 1
+let g:ale_sign_error = '!E'
+let g:ale_sign_warning = '!W'
+let g:ale_echo_msg_error_str = 'E'
+let g:ale_echo_msg_warning_str = 'W'
+let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
+
+" :highlight NeomakeWarningMsg ctermfg=227 ctermbg=16
+" :highlight NeomakeErrorMsg ctermfg=1 ctermbg=16
+" let g:neomake_warning_sign={'text': '!W', 'texthl': 'NeomakeWarningMsg'}
+" let g:neomake_error_sign={'text': '!E', 'texthl': 'NeomakeErrorMsg'}
+" autocmd! BufWritePost * Neomake
