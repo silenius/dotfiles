@@ -10,12 +10,11 @@ Plug 'pangloss/vim-javascript'
 Plug 'tpope/vim-fugitive'
 Plug 'hynek/vim-python-pep8-indent'
 Plug 'saltstack/salt-vim'
-Plug 'rking/ag.vim'
+Plug 'mileszs/ack.vim'
 Plug 'rust-lang/rust.vim'
 Plug 'haproxy'
 Plug 'airblade/vim-gitgutter'
 Plug 'icinga/icinga2'
-"Plug 'neomake/neomake'
 Plug 'w0rp/ale'
 Plug 'mattn/emmet-vim'
 
@@ -102,6 +101,7 @@ let g:indent_guides_enable_on_vim_startup=1
 if executable('ag')
     let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
     let g:ctrlp_use_caching = 0
+    let g:ackprg = 'ag --vimgrep'
 else
     let g:ctrlp_user_command = 'find %s -not -path "*/\.*" -type f -exec grep -Iq . {} \; -and -print'
 endif
@@ -109,9 +109,9 @@ endif
 let g:airline#extensions#ale#enabled = 1
 let g:ale_sign_error = '!E'
 let g:ale_sign_warning = '!W'
-let g:ale_echo_msg_error_str = 'E'
-let g:ale_echo_msg_warning_str = 'W'
-let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
+" let g:ale_echo_msg_error_str = 'E'
+" let g:ale_echo_msg_warning_str = 'W'
+" let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
 
 " :highlight NeomakeWarningMsg ctermfg=227 ctermbg=16
 " :highlight NeomakeErrorMsg ctermfg=1 ctermbg=16
