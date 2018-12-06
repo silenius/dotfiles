@@ -17,6 +17,8 @@ Plug 'airblade/vim-gitgutter'
 Plug 'icinga/icinga2'
 Plug 'w0rp/ale'
 Plug 'mattn/emmet-vim'
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'zchee/deoplete-jedi'
 
 " Colorschemes
 Plug 'w0ng/vim-hybrid'
@@ -118,3 +120,5 @@ let g:ale_sign_warning = '!W'
 " let g:neomake_warning_sign={'text': '!W', 'texthl': 'NeomakeWarningMsg'}
 " let g:neomake_error_sign={'text': '!E', 'texthl': 'NeomakeErrorMsg'}
 " autocmd! BufWritePost * Neomake
+let g:deoplete#enable_at_startup = 1
+let g:python3_host_prog = /home/jcigar/venvs/neovim/bin/python
