@@ -121,4 +121,4 @@ let g:ale_sign_warning = '!W'
 " let g:neomake_error_sign={'text': '!E', 'texthl': 'NeomakeErrorMsg'}
 " autocmd! BufWritePost * Neomake
 let g:deoplete#enable_at_startup = 1
-let g:python3_host_prog = /home/jcigar/venvs/neovim/bin/python
+let g:python3_host_prog = "/home/jcigar/venvs/neovim/bin/python"
