@@ -12,14 +12,13 @@ Plug 'hynek/vim-python-pep8-indent'
 Plug 'saltstack/salt-vim'
 Plug 'mileszs/ack.vim'
 Plug 'rust-lang/rust.vim'
-Plug 'haproxy'
 Plug 'airblade/vim-gitgutter'
-Plug 'icinga/icinga2'
 Plug 'w0rp/ale'
 Plug 'mattn/emmet-vim'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'zchee/deoplete-jedi'
 Plug 'nginx/nginx', { 'rtp': 'contrib/vim' }
+Plug 'icinga/icinga2', { 'rtp': 'tools/syntax/vim' }
 
 " Colorschemes
 Plug 'w0ng/vim-hybrid'
