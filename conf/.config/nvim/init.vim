@@ -19,6 +19,7 @@ Plug 'w0rp/ale'
 Plug 'mattn/emmet-vim'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'zchee/deoplete-jedi'
+Plug 'nginx/nginx', { 'rtp': 'contrib/vim' }
 
 " Colorschemes
 Plug 'w0ng/vim-hybrid'
@@ -102,7 +103,8 @@ let g:indent_guides_enable_on_vim_startup=1
 
 if executable('ag')
     let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
-    let g:ctrlp_use_caching = 0
+    let g:ctrlp_working_path_mode = ''
+    let g:ctrlp_use_caching = 1
     let g:ackprg = 'ag --vimgrep'
 else
     let g:ctrlp_user_command = 'find %s -not -path "*/\.*" -type f -exec grep -Iq . {} \; -and -print'
