@@ -112,6 +112,10 @@ endif
 let g:airline#extensions#ale#enabled = 1
 let g:ale_sign_error = '!E'
 let g:ale_sign_warning = '!W'
+" let g:ale_virtualenv_dir_names = ['/home/jcigar/venvs/neovim']
+" let g:ale_fixers = {
+" \    'python': ['add_blank_lines_for_python_control_statements']
+" \}
 " let g:ale_echo_msg_error_str = 'E'
 " let g:ale_echo_msg_warning_str = 'W'
 " let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
