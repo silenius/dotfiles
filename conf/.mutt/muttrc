@@ -109,3 +109,4 @@ bind index,pager \CO sidebar-open
 # Colors
 
 source ~/.mutt/colorschemes/solarized-dark-256
+source ~/.mutt/local
