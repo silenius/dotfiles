@@ -2,7 +2,9 @@ set nocompatible
 filetype off
 call plug#begin('~/.local/share/nvim/plugged')
 Plug 'junegunn/vim-plug'
-Plug 'ctrlpvim/ctrlp.vim'
+" Plug 'ctrlpvim/ctrlp.vim'
+Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
 Plug 'bling/vim-airline'
 Plug 'majutsushi/tagbar'
 Plug 'nathanaelkane/vim-indent-guides'
@@ -100,14 +102,14 @@ command W :execute ':silent w !sudo tee % > /dev/null' | :edit!
 let g:indent_guides_color_change_percent = 5
 let g:indent_guides_enable_on_vim_startup=1
 
-if executable('ag')
-    let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
-    let g:ctrlp_working_path_mode = ''
-    let g:ctrlp_use_caching = 1
-    let g:ackprg = 'ag --vimgrep'
-else
-    let g:ctrlp_user_command = 'find %s -not -path "*/\.*" -type f -exec grep -Iq . {} \; -and -print'
-endif
+" if executable('ag')
+"    let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+"    let g:ctrlp_working_path_mode = ''
+"    let g:ctrlp_use_caching = 1
+"    let g:ackprg = 'ag --vimgrep'
+" else
+"   let g:ctrlp_user_command = 'find %s -not -path "*/\.*" -type f -exec grep -Iq . {} \; -and -print'
+" endif
 
 let g:airline#extensions#ale#enabled = 1
 let g:ale_sign_error = '!E'
