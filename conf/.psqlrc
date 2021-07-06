@@ -1,3 +1,3 @@
 \pset null (null)
 \timing on
-\setenv PAGER 'less -S'
+\setenv PAGER 'less -iMSx4 -FX'

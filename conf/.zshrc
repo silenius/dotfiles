@@ -13,7 +13,7 @@ colors
 
 autoload -Uz promptinit
 promptinit
-prompt fade red
+prompt redhat
 
 bindkey "^[[7~" beginning-of-line
 bindkey "^[[8~" end-of-line

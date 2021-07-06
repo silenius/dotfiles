@@ -3,12 +3,13 @@ source "~/.mutt/smtps/default" # which SMTP server to use
 
 set mbox_type="Maildir"
 set folder="imaps://slug.uni.cx/" # default location of mailboxes
-set spoolfile="=INBOX" # folder where e-mail arrives
+set spoolfile="imaps://slug.uni.cx/INBOX" # folder where e-mail arrives
 set record="=Sent" # where outgoing messages should be appended
 set postponed="=Drafts" # where to save postponed messages
 set imap_check_subscribed
 set imap_user=$my_user_home
 set imap_pass=$my_pw_home
+set imap_authenticators="login"
 set timeout=15
 set mail_check=60 # check for new mail every minute
 set history=100 # keep 100 lines in the history buffer
@@ -109,3 +110,4 @@ bind index,pager \CO sidebar-open
 # Colors
 
 source ~/.mutt/colorschemes/solarized-dark-256
+source ~/.mutt/local
