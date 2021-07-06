@@ -37,7 +37,7 @@ set from="julien@perdition.city"
 set use_from # generate the "From:" header field when sending messages
 set realname="Julien Cigar"
 set include # include message in replies
-set editor="vim -c 'set syntax=mail ft=mail nonu nornu tw=72'" # vim <3
+set editor="nvim -c 'set syntax=mail ft=mail nonu nornu tw=72'" # vim <3
 set edit_headers # show headers when composing
 set send_charset="utf-8" # use utf-8 for outgoing messages
 unset reply_self
@@ -89,11 +89,11 @@ set pgp_sign_as=0xB2BB3710A20423C0
 
 # Sidebar
 
-set sidebar_width=32
-set sidebar_visible=no
-set sidebar_delim='|'
-set sidebar_sort=yes
-set sidebar_shortpath=yes
+#set sidebar_width=32
+#set sidebar_visible=no
+#set sidebar_delim='|'
+#set sidebar_sort=yes
+#set sidebar_shortpath=yes
 
 # Macros
 #
