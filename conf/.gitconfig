@@ -11,7 +11,7 @@
     stat = true
 
 [core]
-    editor = vim
+    editor = nvim
     excludesfile = ~/.gitignore
 
 [rebase]
