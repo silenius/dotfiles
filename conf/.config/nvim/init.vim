@@ -113,6 +113,7 @@ command W :execute ':silent w !sudo tee % > /dev/null' | :edit!
 " let g:neomake_error_sign={'text': '!E', 'texthl': 'NeomakeErrorMsg'}
 " autocmd! BufWritePost * Neomake
 "
+let g:python3_host_prog='/usr/local/bin/python3.8'
 
 lua <<EOF
 require'nvim-treesitter.configs'.setup {
