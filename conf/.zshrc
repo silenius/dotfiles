@@ -20,3 +20,6 @@ bindkey "^[[8~" end-of-line
 bindkey "^[[1~" beginning-of-line
 bindkey "^[[4~" end-of-line
 bindkey "^[[3~" delete-char
+
+alias ls="ls -GF"
+alias ll="ls -l"
