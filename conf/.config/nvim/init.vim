@@ -7,18 +7,18 @@ Plug 'junegunn/fzf.vim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'neovim/nvim-lspconfig'
 Plug 'bling/vim-airline'
-Plug 'nathanaelkane/vim-indent-guides'
-Plug 'pangloss/vim-javascript'
-Plug 'tpope/vim-fugitive'
-Plug 'hynek/vim-python-pep8-indent'
-Plug 'saltstack/salt-vim'
-Plug 'rust-lang/rust.vim'
-Plug 'airblade/vim-gitgutter'
+"Plug 'nathanaelkane/vim-indent-guides'
+"Plug 'pangloss/vim-javascript'
+"Plug 'tpope/vim-fugitive'
+"Plug 'hynek/vim-python-pep8-indent'
+"Plug 'saltstack/salt-vim'
+"Plug 'rust-lang/rust.vim'
+"Plug 'airblade/vim-gitgutter'
 "Plug 'dense-analysis/ale'
-Plug 'mattn/emmet-vim'
-Plug 'nginx/nginx', { 'rtp': 'contrib/vim' }
-Plug 'icinga/icinga2', { 'rtp': 'tools/syntax/vim' }
-Plug 'lukas-reineke/indent-blankline.nvim'
+"Plug 'mattn/emmet-vim'
+"Plug 'nginx/nginx', { 'rtp': 'contrib/vim' }
+"Plug 'icinga/icinga2', { 'rtp': 'tools/syntax/vim' }
+"Plug 'lukas-reineke/indent-blankline.nvim'
 
 " Colorschemes
 Plug 'w0ng/vim-hybrid'
