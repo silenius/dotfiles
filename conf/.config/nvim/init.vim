@@ -116,6 +116,10 @@ command W :execute ':silent w !sudo tee % > /dev/null' | :edit!
 let g:python3_host_prog='/usr/local/bin/python3.8'
 
 lua <<EOF
+require'lspconfig'.pyright.setup{
+    cmd = {"/home/julien/neovim/node_modules/.bin/pyright-langserver", "--stdio" }
+}
+
 require'nvim-treesitter.configs'.setup {
   highlight = {
     enable = true,

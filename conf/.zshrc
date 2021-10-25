@@ -13,7 +13,7 @@ colors
 
 autoload -Uz promptinit
 promptinit
-prompt redhat
+prompt fade red
 
 bindkey "^[[7~" beginning-of-line
 bindkey "^[[8~" end-of-line
@@ -23,3 +23,5 @@ bindkey "^[[3~" delete-char
 
 alias ls="ls -GF"
 alias ll="ls -l"
+
+export PATH="/home/julien/.local/bin:$PATH"
