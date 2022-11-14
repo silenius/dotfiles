@@ -24,4 +24,4 @@ bindkey "^[[3~" delete-char
 alias ls="ls -GF"
 alias ll="ls -l"
 
-export PATH="/home/julien/.local/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
