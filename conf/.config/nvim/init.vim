@@ -145,6 +145,8 @@ require'lualine'.setup{
 }
 
 require'nvim-treesitter.configs'.setup {
+  ensure_installed = { "python", "vue", "rust", "html", "css", "sql" },
+  auto_install = true,
   highlight = {
     enable = true,
   },
@@ -230,10 +232,6 @@ require'nvim-treesitter.configs'.setup {
   require('lspconfig')['pyright'].setup {
     capabilities = capabilities
   }
-
-
-
-
 
 EOF
 
