@@ -78,26 +78,8 @@ set termencoding=utf-8
 
 set background=dark
 
-augroup apache
-    autocmd!
-    autocmd BufNewFile,BufRead */etc/apache2*/extra/*.conf setfiletype apache
-augroup END
-
-augroup filetype_make
-    autocmd!
-    autocmd filetype make setlocal noexpandtab
-augroup END
-
-augroup filetype_python
-    autocmd!
-    " Trim trailing white spaces for Python files
-    autocmd filetype python autocmd BufWritePre <buffer> :%s/\s\+$//e
-augroup END
-
-augroup filetype_html_xml
-    autocmd!
-    autocmd filetype html,xml set textwidth=0
-augroup END
+autocmd BufRead *.vue setlocal tabstop=2 softtabstop=2 shiftwidth=2
+autocmd BufRead *.sls setlocal syntax=yaml tabstop=2 softtabstop=2 shiftwidth=2
 
 imap <c-d> <esc>ddi
 map! <esc>[7~ <Home>
