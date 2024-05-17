@@ -9,6 +9,7 @@ Plug 'neovim/nvim-lspconfig'
 "Plug 'bling/vim-airline'
 Plug 'nvim-lualine/lualine.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
+Plug 'lewis6991/gitsigns.nvim'
 "Plug 'nathanaelkane/vim-indent-guides'
 "Plug 'pangloss/vim-javascript'
 "Plug 'tpope/vim-fugitive'
@@ -88,15 +89,11 @@ map <esc>[7~ <Home>
 map <esc>[8~ <End>
 command W :execute ':silent w !sudo tee % > /dev/null' | :edit!
 
-" let g:indent_guides_color_change_percent = 5
-" let g:indent_guides_enable_on_vim_startup=1
+noremap <C-X> "+x
+noremap <C-X> "+y
+map <C-V> "+gP
+imap <C-V> <Esc>"+gPa
 
-"let g:airline#extensions#ale#enabled = 1
-"let g:ale_sign_error = '!E'
-"let g:ale_sign_warning = '!W'
-" let g:ale_echo_msg_error_str = 'E'
-" let g:ale_echo_msg_warning_str = 'W'
-" let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
 
 " :highlight NeomakeWarningMsg ctermfg=227 ctermbg=16
 " :highlight NeomakeErrorMsg ctermfg=1 ctermbg=16
@@ -109,6 +106,8 @@ let g:python3_host_prog='/usr/local/bin/python3.9'
 set completeopt=menu,menuone,noselect
 
 lua <<EOF
+
+require('gitsigns').setup()
 
 require'lualine'.setup{
     options = { 
@@ -142,13 +141,27 @@ require'nvim-treesitter.configs'.setup {
 
 -- Setup language servers.
 local lspconfig = require('lspconfig')
+
 lspconfig.pyright.setup {}
-lspconfig.volar.setup{
-    cmd = {'./node_modules/@volar/vue-language-server/bin/vue-language-server.js', '--stdio'},
-    filetypes = {
-        'typescript', 'javascript', 'javascriptreact', 'typescriptreact', 'vue', 'json'
-    }
+
+local vue_language_server_path = './node_modules/@vue/language-server'
+
+lspconfig.tsserver.setup {
+  init_options = {
+    plugins = {
+      {
+        name = '@vue/typescript-plugin',
+        location = vue_language_server_path,
+        languages = { 'vue' },
+      },
+    },
+  },
+  filetypes = { 'typescript', 'javascript', 'javascriptreact', 'typescriptreact', 'vue' },
 }
+
+-- No need to set `hybridMode` to `true` as it's the default value
+lspconfig.volar.setup {}
+
 lspconfig.rust_analyzer.setup {
   -- Server-specific settings. See `:help lspconfig-setup`
   settings = {
